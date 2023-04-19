@@ -14,7 +14,6 @@ export function createLocation(req: Request, res: Response) {
     locationsService.createLocation(location);
     res.sendStatus(httpStatus.CREATED);
   } catch (error) {
-    console.log(error);
     res.sendStatus(httpStatus.CONFLICT);
   }
 }
